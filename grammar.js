@@ -71,6 +71,8 @@ module.exports = grammar({
 
     node_name: $ => $._identifier,
 
+    variable: $ => $._identifier,
+
     anchor: $ => '.',
 
     child: $ => seq(
@@ -85,7 +87,7 @@ module.exports = grammar({
     predicate: $ => seq(
       '(',
       $.predicate_name,
-      repeat(choice($.capture, $.string)),
+      repeat(choice($.capture, $.string, $.variable)),
       ')',
     ),
 

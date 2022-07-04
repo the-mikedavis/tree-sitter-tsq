@@ -311,6 +311,10 @@
         {
           "type": "string",
           "named": true
+        },
+        {
+          "type": "variable",
+          "named": true
         }
       ]
     }
@@ -348,6 +352,11 @@
         }
       ]
     }
+  },
+  {
+    "type": "variable",
+    "named": true,
+    "fields": {}
   },
   {
     "type": "wildcard_node",

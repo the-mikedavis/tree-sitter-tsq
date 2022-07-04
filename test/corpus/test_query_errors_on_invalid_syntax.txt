@@ -159,14 +159,14 @@ Unclosed paren in predicate
 
 --------------------------------------------------------------------------------
 
-(query
-  (ERROR
-    (pattern
-      pattern: (named_node
-        (node_name))
-      (capture))
-    (predicate_name)
-    (capture)))
+(ERROR
+  (pattern
+    pattern: (named_node
+      (node_name))
+    (capture))
+  (predicate_name)
+  (capture)
+  (variable))
 
 ================================================================================
 Unclosed anonymous leaf
